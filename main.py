@@ -7,5 +7,5 @@ import requests
 
 root = tk.Tk()
 root.geometry("1600x900")
-webview.create_window("Roblox", "https://www.roblox.com/login")
+webview.create_window("", "")
 webview.start(debug=True)
