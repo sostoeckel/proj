@@ -39,7 +39,11 @@ h1 {
 
 p {
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
+}
+a {
+  font-size: 12px;
+  text-decoration: none;
 }
 .buttonnext {
   background-color: rgb(0, 103, 184);
