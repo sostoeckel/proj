@@ -5,22 +5,56 @@
 h1 {
   color: black;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
 }
 
 p {
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
-.button {
-  background-color: rgb(102, 174, 255);
+.buttonnext {
+  background-color: rgb(0, 103, 184);
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 0px;
 }
+.buttonback {
+  background-color: rgb(209, 207, 207);
+  color: black;
+  border: none;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 0px;
+}
+/* everything below here work on */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.flex-container div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;  
+  font-size: 30px;
+}
+ /* help make buttons side by side ^ this doesnt work, keep trying  */
+form {
+  font-size: 12px;
+  display: flex;
+ }

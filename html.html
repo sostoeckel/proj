@@ -6,13 +6,22 @@
 
 <body>
     <h1>
-        Outlook
+        Sign In
     </h1>
 <p>Welcome to Outlook
     Let's die together </p>
 
+<form method="get">
+    <label for="email">
+    <input type="text" id="email" 
+        name="email" 
+        placeholder="Email, phone, or Skype" required>
+    </label>
+</form>
+
 <p style="align-content: center">
-  <A style="align-content: center" HREF="em.html" onClick="return popup(this, 'test')"><button class="button">New Email</button></A><br>
+<div class=“flex-container”>
+<A style="align-content: center" HREF="em.html" onClick="return popup(this, 'test')"><button class="buttonnext">Next</button></A><br>
 </p>
 <script>
    function fullwindowpopup(){
@@ -20,6 +29,15 @@
    }
 </script>
 
+<p style="align-content: center">
+<A style="align-content: center" HREF="google.com" onClick="return popup(this, 'test')"><button class="buttonback">Back</button></A><br>
+</p>
+</div>
+<script>
+   function fullwindowpopup(){
+      window.open("google.com", "popup")
+   }
+</script>
 
 </body>
 </html>
