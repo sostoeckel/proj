@@ -13,7 +13,7 @@ webview.create_window("Outlook Login", "html.html")
 webview.start()
 
 
-
+# below has been kinda done, feel free to work on it
 # for opening the new email as a new window, maybe try creating a function to open it in here then somehow call it in the html?
 # ik u can do it in javascript but idk bout python
 #i'll leave the bullshit here
