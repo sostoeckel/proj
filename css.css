@@ -1,6 +1,21 @@
- body {
+body {
   background-color: white;
 }
+/* sign in box taken straight from ctrl inspect outlook log in, doesnt work pls fix */
+.inner, .sign-in-box {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 440px;
+  width: calc(100%-40px);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px;
+  min-width: 320px;
+  min-height: 338px;
+  padding: 44px;
+  overflow: hidden;
+}
+/* pls fix!!! */
 
 h1 {
   color: black;
