@@ -17,6 +17,18 @@ body {
 }
 /* pls fix!!! */
 
+.topb { /* this specific class will be for top buttons, stuff like "file", "back" and "forward" buttons, etc*/
+  background: none;
+  border: none;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.topb:hover {
+  background-color: #999999;
+  color: white;
+}
+
 h1 {
   color: black;
   text-align: left;
