@@ -71,13 +71,22 @@ a {
   cursor: pointer;
   border-radius: 0px;
 }
-/* everything below here work on */
+
 dl {
   display: flex;
-  justify-self: space-between;
 }
- /* help make buttons side by side ^ this doesnt work, keep trying  */
-form {
+
+.emailname {
   font-size: 12px;
   display: flex;
+  width: 180px;
+  height: 17px;
+  font-family: sans-serif;
+ }
+ .passwordname {
+  font-size: 12px;
+  display: flex;
+  width: 180px;
+  height: 17px;
+  font-family: sans-serif;
  }

@@ -9,7 +9,7 @@ import webview
 
 root = tk.Tk()
 root.geometry("1600x900")
-webview.create_window("Outlook Login", "html.html")
+webview.create_window("Outlook", "html.html")
 webview.start()
 
 

@@ -14,18 +14,24 @@
 
 <form method="get">
     <label for="email">
-    <input type="text" id="email" 
+    <input type="text" id="email" class = "emailname"
         name="email" 
         placeholder="Email, phone, or Skype" required>
     </label>
+    <label for="password">
+    <input type="text" id="pass" class = "passwordname"
+        name ="pass"
+        placeholder="Password">
+    </label>
+
 </form>
 <p>
-    No account? <a href="google.com" target="_blank">Create one!</a>
+    No account? <a href="https://signup.live.com/signup?sru=https%3a%2f%2flogin.live.com%2foauth20_authorize.srf%3flc%3d1033%26client_id%3d9199bf20-a13f-4107-85dc-02114787ef48%26mkt%3dEN-US%26opid%3d19410476CC170A46%26opidt%3d1791502227%26uaid%3dcea4b5ebd47e90a557ef36a3f642edbb%26contextid%3d065A371B2AACE775%26opignore%3d1&mkt=EN-US&uiflavor=web&lw=1&fl=easi2&client_id=9199bf20-a13f-4107-85dc-02114787ef48&uaid=cea4b5ebd47e90a557ef36a3f642edbb&suc=9199bf20-a13f-4107-85dc-02114787ef48&fluent=2&lic=1" target="_blank">Create one!</a>
 </p>
 
 <dl>
-<a style="align-content: center" HREF="google.com" onClick="return popup(this, 'test')"><button class="buttonback">Back</button></A><br>
-<a style="align-content: center" HREF="em.html" onClick="return popup(this, 'test')"><button class="buttonnext">Next</button></A><br>
+<a style="align-content: center" HREF="google.com" id="button" onClick="return popup(this, 'test')"><button class="buttonback">Back</button></A><br>
+<a style="align-content: center" HREF="em.html" id="button" onClick="return popup(this, 'test')"><button class="buttonnext">Next</button></A><br>
 </dl>
 
 <script>
@@ -38,6 +44,30 @@
    function fullwindowpopup(){
       window.open("google.com", "popup")
    }
+</script>
+
+<!-- below trying to make it if email thing is empty then it gets mad at u, also if u dont enter
+ an email address with @thing.thing it gets mad at u too, same with password 
+ try this link: https://stackoverflow.com/questions/69959085/print-text-when-button-is-pressed-->
+<script>
+        var input = document.getElementsByTagName("emailname")[0];
+        var input1 = document.getElementsByTagName("passwordname")[0];
+        var place = String;
+        var end = String;
+        var clicked = false
+        document.getElementById('button').addEventListener("click", function() {
+        console.log(input.endsWith("@" + place + "." + end));
+            nextCode();
+        if (input == ""){
+            clicked = true;
+            console.log("Name must be filled out");
+            return;
+        }
+        if (input1 == ""){
+            clicked = true;
+            print("No");
+        }
+    });
 </script>
 
 </body>
