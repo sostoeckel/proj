@@ -72,17 +72,9 @@ a {
   border-radius: 0px;
 }
 /* everything below here work on */
-.flex-container {
+dl {
   display: flex;
-  flex-direction: row;
-}
-.flex-container div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  padding: 10px;
-  text-align: center;  
-  font-size: 30px;
+  justify-self: space-between;
 }
  /* help make buttons side by side ^ this doesnt work, keep trying  */
 form {
