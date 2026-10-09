@@ -1,6 +1,8 @@
+/* only group together if they are related, if not make sure to keep space between lines */
 body {
   background-color: white;
 }
+
 /* sign in box taken straight from ctrl inspect outlook log in, doesnt work pls fix */
 .inner, .sign-in-box {
   margin-left: auto;
@@ -41,10 +43,13 @@ p {
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif;
   font-size: 12px;
 }
+
 a {
   font-size: 12px;
   text-decoration: none;
 }
+
+/* can someone put a space between both buttons thanks */
 .buttonnext {
   background-color: rgb(0, 103, 184);
   border: none;
@@ -76,6 +81,7 @@ dl {
   display: flex;
 }
 
+/* can someone put  space below username input and password input thanks */
 .emailname {
   font-size: 12px;
   display: flex;

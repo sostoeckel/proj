@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css.css">
 </head>
+<!-- buttons for forwards and backwards, top left as of right now -->
 <button class = "topb" onclick="history.back()">←</button>
 <button class = "topb" onclick="history.back()">→</button>
 <body>
@@ -12,7 +13,8 @@
 <p>Welcome to Outlook
     Let's die together #hi </p>
 
-<form method="get">
+<!-- form for username & password -->
+<form method="get"> 
     <label for="email">
     <input type="text" id="email" class = "emailname"
         name="email" 
@@ -25,10 +27,12 @@
     </label>
 
 </form>
+<!-- No account? right below username and password -->
 <p>
     No account? <a href="https://signup.live.com/signup?sru=https%3a%2f%2flogin.live.com%2foauth20_authorize.srf%3flc%3d1033%26client_id%3d9199bf20-a13f-4107-85dc-02114787ef48%26mkt%3dEN-US%26opid%3d19410476CC170A46%26opidt%3d1791502227%26uaid%3dcea4b5ebd47e90a557ef36a3f642edbb%26contextid%3d065A371B2AACE775%26opignore%3d1&mkt=EN-US&uiflavor=web&lw=1&fl=easi2&client_id=9199bf20-a13f-4107-85dc-02114787ef48&uaid=cea4b5ebd47e90a557ef36a3f642edbb&suc=9199bf20-a13f-4107-85dc-02114787ef48&fluent=2&lic=1" target="_blank">Create one!</a>
 </p>
 
+<!-- what the button do when clicked -->
 <dl>
 <a style="align-content: center" HREF="google.com" id="button" onClick="return popup(this, 'test')"><button class="buttonback">Back</button></A><br>
 <a style="align-content: center" HREF="em.html" id="button" onClick="myFunction()"><button class="buttonnext">Next</button></A><br>
