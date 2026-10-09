@@ -31,7 +31,7 @@
 
 <dl>
 <a style="align-content: center" HREF="google.com" id="button" onClick="return popup(this, 'test')"><button class="buttonback">Back</button></A><br>
-<a style="align-content: center" HREF="em.html" id="button" onClick="return popup(this, 'test')"><button class="buttonnext">Next</button></A><br>
+<a style="align-content: center" HREF="em.html" id="button" onClick="myFunction()"><button class="buttonnext">Next</button></A><br>
 </dl>
 
 <script>
@@ -49,25 +49,45 @@
 <!-- below trying to make it if email thing is empty then it gets mad at u, also if u dont enter
  an email address with @thing.thing it gets mad at u too, same with password 
  try this link: https://stackoverflow.com/questions/69959085/print-text-when-button-is-pressed-->
+<p id="printHere"></p>
 <script>
         var input = document.getElementsByTagName("emailname")[0];
         var input1 = document.getElementsByTagName("passwordname")[0];
         var place = String;
         var end = String;
         var clicked = false
-        document.getElementById('button').addEventListener("click", function() {
-        console.log(input.endsWith("@" + place + "." + end));
-            nextCode();
-        if (input == ""){
-            clicked = true;
-            console.log("Name must be filled out");
-            return;
+        document.getElementById('button').onclick = function() {
+        document.getElementById('printHere').innerHTML = error;
+            console.log(error)
+            if (console.log(input.endsWith("@" + place + "." + end))){
+                nextCode();
+            }
+            if (input == ""){
+                onclick(error);
+                return;
+            }
+            if (input1 == ""){
+                onclick(error);
+            }
+    };
+</script>
+
+<!-- test 2 of that. one of these HAS to work 
+ is the placeholder messing it up???-->
+<p id="demo"></p>
+<script>
+var input = document.getElementsByTagName("emailname")[0];
+function myFunction() {
+    if (console.log(input.endsWith("@" + place + "." + end))){
+        function fullwindowpopup(){
+            window.open("em.html", "popup")
         }
-        if (input1 == ""){
-            clicked = true;
-            print("No");
-        }
-    });
+    }
+    if(input == "")
+    {
+        document.getElementById("demo").innerHTML = "Error";
+    }
+}
 </script>
 
 </body>

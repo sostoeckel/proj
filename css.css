@@ -90,3 +90,7 @@ dl {
   height: 17px;
   font-family: sans-serif;
  }
+
+#error {
+  font-size: 12px;
+}
