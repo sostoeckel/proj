@@ -5,7 +5,7 @@
 </head>
 <!-- buttons for forwards and backwards, top left as of right now -->
 <button class = "topb" onclick="history.back()">←</button>
-<button class = "topb" onclick="history.back()">→</button>
+<button class = "topb" onclick="history.forward()">→</button>
 <body>
     <h1>
         Sign In
@@ -48,6 +48,42 @@
    function fullwindowpopup(){
       window.open("google.com", "popup")
    }
+</script>
+<!-- test 3: tried this link here: https://stackoverflow.com/questions/28103060/trying-to-create-a-simple-form-that-will-display-an-error-if-nothing-is-filled-i -->
+<script type="text/javascript">
+
+function register(){
+
+var x = new Array();
+x[0] = document.getElementById('email').value;
+x[1] = document.getElementById('pass').value;
+
+var h = new Array();
+h[0] = "<span style=color:red>Please type a valid email!</span>";
+h[1] = "<span style=color:red>Please type password!</span>";
+
+var divs = new Array("memail", "mpass");
+
+        for(i in x){
+
+
+            var error = h[i];
+            var div = divs[i];
+
+
+            if(x[i]===''){
+
+                document.getElementById(div).innerHTML = error;
+
+            }else{
+
+                document.getElementById(div).innerHTML = "OK!";
+
+            };
+
+
+        };
+    };
 </script>
 
 <!-- below trying to make it if email thing is empty then it gets mad at u, also if u dont enter
