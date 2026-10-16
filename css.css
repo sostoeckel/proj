@@ -76,6 +76,10 @@ a {
   cursor: pointer;
   border-radius: 0px;
 }
+.filler{
+  background-color: white;
+  width: 5px;
+}
 
 dl {
   display: flex;
