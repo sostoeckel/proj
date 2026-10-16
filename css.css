@@ -100,3 +100,9 @@ dl {
 #error {
   font-size: 12px;
 }
+
+.checkbox {
+  font-size: 10px;
+  font-family: sans-serif;
+  color: rgb(201, 0, 0);
+}
