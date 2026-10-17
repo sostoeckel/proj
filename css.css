@@ -76,6 +76,7 @@ a {
   cursor: pointer;
   border-radius: 0px;
 }
+
 .filler{
   background-color: white;
   width: 5px;
@@ -105,8 +106,6 @@ dl {
   font-size: 12px;
 }
 
-.checkbox {
-  font-size: 10px;
-  font-family: sans-serif;
-  color: rgb(201, 0, 0);
+input[type="checkbox"] {
+  font-size: 12px;
 }

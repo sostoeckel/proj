@@ -5,8 +5,14 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <!-- buttons for forwards and backwards, top left as of right now -->
+<button class = "topb" onClick="refreshPage()">↻</button>
 <button class = "topb" onclick="history.back()">←</button>
 <button class = "topb" onclick="history.forward()">→</button>
+<script>
+    function refreshPage(){
+        window.location.reload();
+}
+</script>
 <body>
     <h1>
         Sign In
@@ -19,6 +25,7 @@
         name="email" 
         placeholder="Email, phone, or Skype" required>
     </label>
+    <p class ="filler" id="filler1"></p>
     <label for="password">
     <input type="text" id="pass" class = "passwordname"
         name ="pass"
@@ -43,7 +50,7 @@
 <!-- what the button do when clicked -->
 <dl>
 <a style="align-content: center" HREF="google.com" id="button" onClick="return popup(this, 'test')"><button class="buttonback">Back</button></A><br>
-<p class ="filler"></p>
+<p class ="filler" id="filler2"></p>
 <a style="align-content: center" HREF="em.html" id="button" onClick="myFunction()"><button class="buttonnext">Next</button></a><br>
 </dl>
 

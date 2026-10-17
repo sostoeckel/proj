@@ -2,8 +2,14 @@
 <html>
 <head>
 <link rel="stylesheet" href="css.css">
+    <button class="submit" onClick="refreshPage()">⟳</button>
     <button class = "topb" onclick="history.back()">←</button>
     <button class = "topb" onclick="history.back()">→</button>
+<script>
+    function refreshPage(){
+        window.location.reload();
+}
+</script>
 </head>
 <body>
     <p>hi</p>
